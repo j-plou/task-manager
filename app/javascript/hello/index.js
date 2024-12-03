@@ -1,13 +1,4 @@
-import { createApp, ref } from 'vue'
+import { createApp } from 'vue'
+import HelloWorld from '../../frontend/HelloWorld.vue';
 
-createApp({
-  setup() {
-    const title = ref('Hello#index')
-    const message = ref('Hello Vue!')
-
-    return {
-      title,
-      message
-    }
-  }
-}).mount('#app')
+createApp(HelloWorld).mount('#hello-world');
