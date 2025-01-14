@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "hello" => "hello#index", as: :hello
+  get "goodbye" => "goodbye#index", as: :goodbye
 end
