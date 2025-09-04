@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    image: task-manager
+    tty: true
+    ports:
+      - "3033:3000"
+    environment:
+      - RAILS_ENV=development
+      - SECRET_KEY_BASE=give-me-convenience-or-give-me-death
+      - RAILS_SERVE_STATIC_FILES=true
+      - BINDING=0.0.0.0
+      - PORT=3000
+    volumes:
+      - .:/rails
